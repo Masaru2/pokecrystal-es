@@ -214,9 +214,9 @@ if !DEF(_CRYSTAL_EU)
 .Mid:  db "MID @"
 .Slow: db "SLOW@"
 else
-.Fast: db "3@"
-.Mid:  db "2@"
-.Slow: db "1@"
+.Fast: db "RÁPIDA @"
+.Mid:  db "MEDIA @"
+.Slow: db "LENTA @"
 endc
 
 GetTextSpeed:
