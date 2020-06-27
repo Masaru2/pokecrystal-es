@@ -1,0 +1,29 @@
+language: c
+os:
+  - linux
+  - osx
+install:
+  - |-
+    ( cd
+        git clone --depth=1 https://github.com/rednex/rgbds
+        sudo make -C rgbds CFLAGS=-O2 install
+        rm -rf rgbds
+    )
+before_script:
+  - |-
+    function check_status() {
+      if ! git diff-index --quiet --ignore-submodules=all HEAD --; then
+        echo 'Uncommitted changes detected:';
+        git diff-index HEAD --;
+        return 1;
+      fi;
+    }
+script:
+  - make -j2 compare
+  - tools/unusedglobals.py -b build/crystal/ -i ram/wram.o -i ram/vram.o -i engine/predef.o -i engine/events/specials.o -i gfx/tilesets.o -i data/text/common_1.o -i data/text/common_2.o -i data/text/common_3.o -i data/text/battle.o
+  - check_status
+after_success:
+  - |-
+    if [ "$TRAVIS_BRANCH" = master -a "$TRAVIS_PULL_REQUEST" = false -a "$TRAVIS_OS_NAME" = linux ]; then
+        ./.travis/webhook.sh
+    fi

@@ -1,0 +1,132 @@
+INCLUDE "constants/maps_common.inc"
+
+	object_const_def ; object_event constants
+	const SPROUTTOWER1F_SAGE1
+	const SPROUTTOWER1F_SAGE2
+	const SPROUTTOWER1F_GRANNY
+	const SPROUTTOWER1F_TEACHER
+	const SPROUTTOWER1F_SAGE3
+	const SPROUTTOWER1F_POKE_BALL
+
+
+SECTION "maps/SproutTower1F", ROMX
+
+SproutTower1F_MapScripts::
+	db 0 ; scene scripts
+
+	db 0 ; callbacks
+
+SproutTower1FSage1Script:
+	jumptextfaceplayer SproutTower1FSage1Text
+
+SproutTower1FSage2Script:
+	jumptextfaceplayer SproutTower1FSage2Text
+
+SproutTower1FGrannyScript:
+	jumptextfaceplayer SproutTower1FGrannyText
+
+SproutTower1FTeacherScript:
+	jumptextfaceplayer SproutTower1FTeacherText
+
+TrainerSageChow:
+	trainer SAGE, CHOW, EVENT_BEAT_SAGE_CHOW, SageChowSeenText, SageChowBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SageChowAfterBattleText
+	waitbutton
+	closetext
+	end
+
+SproutTower1FParlyzHeal:
+	itemball PARLYZ_HEAL
+
+SproutTower1FStatue:
+	jumptext SproutTower1FStatueText
+
+SageChowSeenText:
+	text "Wir bewachen"
+	line "diesen Turm."
+
+	para "In tiefster Dank-"
+	line "barkeit ehren wir"
+	cont "hier alle #MON."
+	done
+
+SageChowBeatenText:
+	text "Da-Danke!"
+	done
+
+SageChowAfterBattleText:
+	text "Die Basis jeder"
+	line "Koexistenz ist"
+	cont "Zusammenarbeit."
+
+	para "Lasst uns dies"
+	line "nie vergessen!"
+	done
+
+SproutTower1FSage1Text:
+	text "Nur wenn du es bis"
+	line "ganz nach oben"
+	cont "schaffst, erhältst"
+	cont "du eine VM."
+	done
+
+SproutTower1FSage2Text:
+	text "Der KNOFENSA-TURM"
+	line "wurde vor langer"
+
+	para "Zeit als #MON-"
+	line "Trainingsstätte"
+	cont "errichtet."
+	done
+
+SproutTower1FGrannyText:
+	text "Ein über 30 m"
+	line "grosses KNOFENSA…"
+
+	para "Man sagt, es wurde"
+	line "die Trägersäule"
+	cont "des Turmes."
+	done
+
+SproutTower1FTeacherText:
+	text "Siehst du, wie sie"
+	line "sich bewegt?"
+
+	para "Die Trainer fin-"
+	line "dest du oben."
+	done
+
+SproutTower1FStatueText:
+	text "Eine PKMN-Statue…"
+
+	para "Sie sieht sehr"
+	line "erhaben aus."
+	done
+
+SproutTower1F_MapEvents::
+	db 0, 0 ; filler
+
+	db 5 ; warp events
+	warp_event  9, 15, VIOLET_CITY, 7
+	warp_event 10, 15, VIOLET_CITY, 7
+	warp_event  6,  4, SPROUT_TOWER_2F, 1
+	warp_event  2,  6, SPROUT_TOWER_2F, 2
+	warp_event 17,  3, SPROUT_TOWER_2F, 3
+
+	db 0 ; coord events
+
+	db 2 ; bg events
+	bg_event  7, 15, BGEVENT_READ, SproutTower1FStatue
+	bg_event 12, 15, BGEVENT_READ, SproutTower1FStatue
+
+	db 6 ; object events
+	object_event  7,  4, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SproutTower1FSage1Script, -1
+	object_event  6,  7, SPRITE_SAGE, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, SproutTower1FSage2Script, -1
+	object_event 11, 12, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SproutTower1FGrannyScript, -1
+	object_event  9,  9, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SproutTower1FTeacherScript, -1
+	object_event  3,  5, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerSageChow, -1
+	object_event 16,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, SproutTower1FParlyzHeal, EVENT_SPROUT_TOWER1F_PARLYZ_HEAL

@@ -1,0 +1,45 @@
+# roms
+*.gbc
+*.map
+*.sym
+
+# for any of the poor souls with save game files in their working directory
+*.sgm
+*.sav
+*.rtc
+*.sn*
+*.sa*
+*.sg*
+
+# compare.sh
+baserom.txt
+pokecrystal.txt
+
+# python stuff
+__pycache__
+*.pyc
+
+# for vim configuration
+# url: http://www.vim.org/scripts/script.php?script_id=441
+.lvimrc
+# swap files for vim
+.*.swp
+# swap files for gedit
+*~
+# osx files
+.DS_STORE
+
+# generated
+*.o
+*.d
+*.dimensions
+*.gbcpal
+*.2bpp
+*.1bpp
+*.lz
+*.animated.tilemap
+gfx/pokemon/*/bitmask.inc
+gfx/pokemon/*/frames.inc
+!gfx/pokemon/unown/bitmask.inc
+!gfx/pokemon/unown/frames.inc
+build/
