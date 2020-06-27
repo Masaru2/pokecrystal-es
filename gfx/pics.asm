@@ -184,7 +184,6 @@ EspeonFrontpic::      INCBIN "gfx/pokemon/espeon/front.animated.2bpp.lz"
 XatuFrontpic::        INCBIN "gfx/pokemon/xatu/front.animated.2bpp.lz"
 MewFrontpic::         INCBIN "gfx/pokemon/mew/front.animated.2bpp.lz"
 OctilleryFrontpic::   INCBIN "gfx/pokemon/octillery/front.animated.2bpp.lz"
-JynxFrontpic::        INCBIN "gfx/pokemon/jynx/front.animated.2bpp.lz"
 WobbuffetFrontpic::   INCBIN "gfx/pokemon/wobbuffet/front.animated.2bpp.lz"
 DelibirdFrontpic::    INCBIN "gfx/pokemon/delibird/front.animated.2bpp.lz"
 LedianFrontpic::      INCBIN "gfx/pokemon/ledian/front.animated.2bpp.lz"
@@ -632,6 +631,7 @@ UnownDBackpic::       INCBIN "gfx/pokemon/unown_d/back.2bpp.lz"
 
 SECTION "gfx/pics@Pics 18", ROMX, BANK[BANK_PICS + 17]
 
+JynxFrontpic::        INCBIN "gfx/pokemon/jynx/front.animated.2bpp.lz"
 SpinarakBackpic::     INCBIN "gfx/pokemon/spinarak/back.2bpp.lz"
 RaikouBackpic::       INCBIN "gfx/pokemon/raikou/back.2bpp.lz"
 UnownKFrontpic::      INCBIN "gfx/pokemon/unown_k/front.animated.2bpp.lz"
