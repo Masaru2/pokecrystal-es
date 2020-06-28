@@ -699,7 +699,7 @@ elif DEF(_CRYSTAL_ES)
 	next "TIPO/@"
 .OK_str:      db "OK@"
 .ExpPointStr: db "PUNTOS EXP@"
-.LevelUpStr:  db "SIG. NIVEL@"
+.LevelUpStr:  db "SUBIR NV.@"
 .ToStr:       db "A@"
 endc
 .PkrsStr:     db "#RUS@"
