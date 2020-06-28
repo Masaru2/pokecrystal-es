@@ -12,7 +12,7 @@ MoveNames::
 	db "DÍA DE PAGO@"
 	db "PUÑO FUEGO@"
 	db "PUÑO HIELO@"
-	db "PUÑO-TRUENO@"
+	db "PUÑO TRUENO@"
 	db "ARAÑAZO@"
 	db "AGARRE@"
 	db "GUILLOTINA@"
