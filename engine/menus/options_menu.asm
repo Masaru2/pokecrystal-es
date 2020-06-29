@@ -213,7 +213,11 @@ if !DEF(_CRYSTAL_EU)
 .Fast: db "FAST@"
 .Mid:  db "MID @"
 .Slow: db "SLOW@"
-else
+elif DEF(_CRYSTAL_DE)
+.Fast: db "3@"
+.Mid:  db "2@"
+.Slow: db "1@"
+elif DEF(_CRYSTAL_ES)
 .Fast: db "RÁPIDA @"
 .Mid:  db "MEDIA @"
 .Slow: db "LENTA @"
