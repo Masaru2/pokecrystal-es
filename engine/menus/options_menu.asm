@@ -214,9 +214,9 @@ if !DEF(_CRYSTAL_EU)
 .Mid:  db "MID @"
 .Slow: db "SLOW@"
 elif DEF(_CRYSTAL_DE)
-.Fast: db "3@"
-.Mid:  db "2@"
-.Slow: db "1@"
+.Fast: db "LANGSAM @"
+.Mid:  db "NORMAL @"
+.Slow: db "SCHNELL @"
 elif DEF(_CRYSTAL_ES)
 .Fast: db "RÁPIDA @"
 .Mid:  db "MEDIA @"
