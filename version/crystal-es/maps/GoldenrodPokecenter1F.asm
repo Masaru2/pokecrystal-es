@@ -20,9 +20,8 @@ GoldenrodPokecenter1FNurseScript:
 	jumpstd pokecenternurse
 
 GoldenrodPokecenter1F_GSBallSceneLeft:
-	setval BATTLETOWERACTION_CHECKMOBILEEVENT
-	special BattleTowerAction
-	ifequal MOBILE_EVENT_OBJECT_GS_BALL, .gsball
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .gsball
 	end
 
 .gsball
