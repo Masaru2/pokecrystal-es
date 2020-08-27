@@ -32,10 +32,10 @@ ElmsWifeText:
 	line "Espero que esté"
 	cont "bien."
 
-	para "Cuando está"
-	line "embebido en la"
+	para "Cuando se"
+	line "embebe en la"
 
-	para "investigación"
+	para "investigación de"
 	line "#MON, se olvida"
 	cont "hasta de comer."
 	done

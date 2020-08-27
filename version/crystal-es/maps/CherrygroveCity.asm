@@ -403,7 +403,7 @@ GuideGentSeaText:
 	done
 
 GuideGentGiftText:
-	text "Llegamos…"
+	text "Y…"
 
 	para "¡Ésta es mi casa!"
 	line "Gracias por"

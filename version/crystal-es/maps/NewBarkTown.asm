@@ -270,7 +270,7 @@ NewBarkTownSignText:
 
 	para "El pueblo donde"
 	line "soplan vientos de"
-	cont "un nuevo amanecer"
+	cont "un nuevo renacer"
 	done
 
 NewBarkTownPlayersHouseSignText:
