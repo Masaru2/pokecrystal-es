@@ -273,7 +273,7 @@ OlivineGymSignText:
 	done
 
 OlivineLighthouseSignText:
-	text "FARO DE OLIVO"
+	text "FARO OLIVO"
 	line "También conocido"
 
 	para "como el FARO"
