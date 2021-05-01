@@ -64,7 +64,7 @@ PlayersNeighborsDaughterText:
 	para "sobre la evolución"
 	line "#MON."
 
-	para "(…Suspiro…)"
+	para "(Suspiro…)"
 
 	para "Ojalá fuera una"
 	line "investigadora como"
