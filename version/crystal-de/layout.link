@@ -1126,7 +1126,7 @@ ROMX $60
 	"maps/KarensRoom"
 	"maps/LancesRoom"
 	"maps/HallOfFame"
-	org $585b
+	org $586b
 	"data/pokemon/dex_entries@Pokedex Entries 001-064"
 ROMX $61
 	"maps/CeruleanCity"
