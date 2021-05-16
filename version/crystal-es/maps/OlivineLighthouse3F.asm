@@ -111,7 +111,7 @@ GentlemanPrestonBeatenText:
 	done
 
 GentlemanPrestonAfterBattleText:
-	text "YASMINA solía"
+	text "JASMÍN solía"
 	line "utilizar #MON"
 	cont "roca como ONIX."
 	done

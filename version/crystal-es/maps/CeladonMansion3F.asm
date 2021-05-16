@@ -164,7 +164,7 @@ GameFreakCharacterDesignerText:
 	text "¿A que las GEMELAS"
 	line "son adorables?"
 
-	para "Y YASMINA también"
+	para "Y JASMÍN también"
 	line "es muy guapa."
 
 	para "¡Me encantan!"

@@ -166,7 +166,7 @@ MovementData_0x60c79:
 	step_end
 
 JasmineCianwoodPharmacyText:
-	text "YASMINA: Este"
+	text "JASMÍN: Este"
 	line "#MON siempre"
 
 	para "iluminaba el mar"
@@ -196,7 +196,7 @@ JasmineGetSomeMedicineText:
 	done
 
 JasmineCureAmphyText:
-	text "YASMINA: ¿Le hará"
+	text "JASMÍN: ¿Le hará"
 	line "la medicina algo a"
 	cont "AMPHY?"
 	done
@@ -204,11 +204,11 @@ JasmineCureAmphyText:
 PlayerHandedSecretpotionText:
 	text "<PLAYER> entregó"
 	line "la POCIÓN SECRETA"
-	cont "a YASMINA."
+	cont "a JASMÍN."
 	done
 
 JasmineDontBeOffendedText:
-	text "YASMINA: ¡Mmm!"
+	text "JASMÍN: ¡Mmm!"
 	line "Por favor, no te"
 	cont "ofendas…"
 
@@ -218,14 +218,14 @@ JasmineDontBeOffendedText:
 	done
 
 JasmineAmphyHowAreYouFeelingText:
-	text "YASMINA: …"
+	text "JASMÍN: …"
 
 	para "AMPHY, ¿cómo te"
 	line "sientes?"
 	done
 
 JasmineThankYouText:
-	text "YASMINA: ¡Oh…!"
+	text "JASMÍN: ¡Oh…!"
 	line "¡Menos mal…!"
 
 	para "Es tan estupendo…"
@@ -237,7 +237,7 @@ JasmineThankYouText:
 	done
 
 JasmineISeeText:
-	text "YASMINA: Ya veo…"
+	text "JASMÍN: Ya veo…"
 	done
 
 JasmineAmphyHangOnText:

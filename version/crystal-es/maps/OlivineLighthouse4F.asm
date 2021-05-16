@@ -35,7 +35,7 @@ TrainerSailorKent:
 	end
 
 SailorKentSeenText:
-	text "YASMINA debe de"
+	text "JASMÍN debe de"
 	line "estar preocupada"
 	cont "por ese #MON."
 
@@ -57,7 +57,7 @@ SailorKentAfterBattleText:
 	done
 
 LassConnie1SeenText:
-	text "YASMINA es LÍDER"
+	text "JASMÍN es LÍDER"
 	line "del GIMNASIO."
 
 	para "Quiero que vuelva"
@@ -81,7 +81,7 @@ LassConnie1AfterBattleText:
 	para "Rezaré por ese"
 	line "#MON, para que"
 
-	para "YASMINA regrese al"
+	para "JASMÍN regrese al"
 	line "GIMNASIO."
 	done
 

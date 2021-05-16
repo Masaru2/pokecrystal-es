@@ -106,7 +106,7 @@ Jasmine_SteelTypeIntro:
 	line "distinto. Déjame"
 	cont "que me presente."
 
-	para "Soy YASMINA, una"
+	para "Soy JASMÍN, una"
 	line "LÍDER de GIMNASIO."
 
 	para "Uso el tipo acero."
@@ -164,7 +164,7 @@ Jasmine_GoodLuck:
 	done
 
 OlivineGymGuyText:
-	text "YASMINA usa el"
+	text "JASMÍN usa el"
 	line "tipo acero recién"
 	cont "descubierto."
 
@@ -184,7 +184,7 @@ OlivineGymGuyWinText:
 	done
 
 OlivineGymGuyPreText:
-	text "YASMINA, la LÍDER"
+	text "JASMÍN, la LÍDER"
 	line "del GIMNASIO, está"
 	cont "en el FARO."
 

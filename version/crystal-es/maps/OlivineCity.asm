@@ -267,7 +267,7 @@ OlivineCityPortSignText:
 OlivineGymSignText:
 	text "LÍDER DEL GIMNASIO"
 	line "#MON DE CIUDAD"
-	cont "OLIVO: YASMINA"
+	cont "OLIVO: JASMÍN"
 
 	para "La chica de acero"
 	done

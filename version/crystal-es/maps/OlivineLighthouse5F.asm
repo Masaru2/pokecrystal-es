@@ -51,7 +51,7 @@ OlivineLighthouse5FHiddenHyperPotion:
 
 SailorErnestSeenText:
 	text "Quería luchar con"
-	line "YASMINA, pero no"
+	line "JASMÍN, pero no"
 
 	para "está disponible."
 	line "¿Y tú, qué…?"
