@@ -10,7 +10,7 @@
 
 MonMenuOptionStrings:
 ; entries correspond to MONMENUVALUE_* constants
-	db "ESTAD.@"
+	db "ESTADO@"
 	db "CAMBIO@"
 	db "OBJETOS@"
 	db "SALIR@"

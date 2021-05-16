@@ -43,7 +43,7 @@ WildCelebiAppearedText::
 
 WantsToBattleText::
 	text "<ENEMY>"
-	line "quiere luchar."
+	line "te desafía."
 	prompt
 
 BattleText_WildFled::
